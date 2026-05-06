@@ -1,6 +1,3 @@
-/*
-Copyright © 2026 NAME HERE <EMAIL ADDRESS>
-*/
 package cmd
 
 import (
@@ -39,9 +36,9 @@ var usersCmd = &cobra.Command{
 			})
 
 			w := tabwriter.NewWriter(os.Stdout, 0, 0, 2, ' ', 0)
-			_, _ = fmt.Fprintln(w, "ID\tName")
+			Println(w, "ID\tName")
 			for _, user := range users {
-				_, _ = fmt.Fprintf(w, "%d\t%s\n", user.ID, user.Username)
+				Printf(w, "%d\t%s\n", user.ID, user.Username)
 			}
 			_ = w.Flush()
 		}

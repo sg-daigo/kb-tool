@@ -1,6 +1,3 @@
-/*
-Copyright © 2026 NAME HERE <EMAIL ADDRESS>
-*/
 package cmd
 
 import (
@@ -40,9 +37,9 @@ var tagsCmd = &cobra.Command{
 			})
 
 			w := tabwriter.NewWriter(os.Stdout, 0, 0, 2, ' ', 0)
-			_, _ = fmt.Fprintln(w, "ID\tProject\tName")
+			Println(w, "ID\tProject\tName")
 			for _, tag := range tags {
-				_, _ = fmt.Fprintf(w, "%d\t%d\t%s\n", tag.ID, tag.ProjectID, tag.Name)
+				Printf(w, "%d\t%d\t%s\n", tag.ID, tag.ProjectID, tag.Name)
 			}
 			_ = w.Flush()
 		}

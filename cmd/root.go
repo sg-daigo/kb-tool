@@ -1,9 +1,8 @@
-/*
-Copyright © 2026 NAME HERE <EMAIL ADDRESS>
-*/
 package cmd
 
 import (
+	"fmt"
+	"io"
 	"log/slog"
 	"os"
 
@@ -69,4 +68,12 @@ func init() {
 	rootCmd.PersistentFlags().StringVarP(&opts.KbConf.Server, "server", "s", "http://localhost", "Server url")
 	rootCmd.PersistentFlags().BoolVarP(&opts.IsDebug, "debug", "d", false, "Toggle debug mode")
 	rootCmd.PersistentFlags().BoolVarP(&opts.ToJson, "json", "j", false, "Show JSON")
+}
+
+func Println(w io.Writer, a ...any) {
+	_, _ = fmt.Fprintln(w, a...)
+}
+
+func Printf(w io.Writer, format string, a ...any) {
+	_, _ = fmt.Fprintf(w, format, a...)
 }

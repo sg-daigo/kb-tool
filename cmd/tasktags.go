@@ -1,6 +1,3 @@
-/*
-Copyright © 2026 NAME HERE <EMAIL ADDRESS>
-*/
 package cmd
 
 import (
@@ -46,9 +43,9 @@ var tasktagsCmd = &cobra.Command{
 
 			// 表示
 			w := tabwriter.NewWriter(os.Stdout, 0, 0, 2, ' ', 0)
-			_, _ = fmt.Fprintln(w, "ID\tName")
+			Println(w, "ID\tName")
 			for _, key := range keys {
-				_, _ = fmt.Fprintf(w, "%s\t%s\n", key, result[key])
+				Printf(w, "%s\t%s\n", key, result[key])
 			}
 			_ = w.Flush()
 		}

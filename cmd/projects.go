@@ -1,6 +1,3 @@
-/*
-Copyright © 2026 NAME HERE <EMAIL ADDRESS>
-*/
 package cmd
 
 import (
@@ -41,9 +38,9 @@ var projectsCmd = &cobra.Command{
 
 			// 表示
 			w := tabwriter.NewWriter(os.Stdout, 0, 0, 2, ' ', 0)
-			_, _ = fmt.Fprintln(w, "ID\tName")
+			Println(w, "ID\tName")
 			for _, project := range projects {
-				_, _ = fmt.Fprintf(w, "%d\t%s\n", project.ID, project.Name)
+				Printf(w, "%d\t%s\n", project.ID, project.Name)
 			}
 			_ = w.Flush()
 		}
