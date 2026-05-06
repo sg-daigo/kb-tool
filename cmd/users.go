@@ -39,11 +39,11 @@ var usersCmd = &cobra.Command{
 			})
 
 			w := tabwriter.NewWriter(os.Stdout, 0, 0, 2, ' ', 0)
-			fmt.Fprintln(w, "ID\tName")
+			_, _ = fmt.Fprintln(w, "ID\tName")
 			for _, user := range users {
-				fmt.Fprintf(w, "%d\t%s\n", user.ID, user.Username)
+				_, _ = fmt.Fprintf(w, "%d\t%s\n", user.ID, user.Username)
 			}
-			w.Flush()
+			_ = w.Flush()
 		}
 
 		return nil

@@ -46,11 +46,11 @@ var tasktagsCmd = &cobra.Command{
 
 			// 表示
 			w := tabwriter.NewWriter(os.Stdout, 0, 0, 2, ' ', 0)
-			fmt.Fprintln(w, "ID\tName")
+			_, _ = fmt.Fprintln(w, "ID\tName")
 			for _, key := range keys {
-				fmt.Fprintf(w, "%s\t%s\n", key, result[key])
+				_, _ = fmt.Fprintf(w, "%s\t%s\n", key, result[key])
 			}
-			w.Flush()
+			_ = w.Flush()
 		}
 
 		return nil

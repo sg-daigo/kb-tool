@@ -41,11 +41,11 @@ var projectsCmd = &cobra.Command{
 
 			// 表示
 			w := tabwriter.NewWriter(os.Stdout, 0, 0, 2, ' ', 0)
-			fmt.Fprintln(w, "ID\tName")
+			_, _ = fmt.Fprintln(w, "ID\tName")
 			for _, project := range projects {
-				fmt.Fprintf(w, "%d\t%s\n", project.ID, project.Name)
+				_, _ = fmt.Fprintf(w, "%d\t%s\n", project.ID, project.Name)
 			}
-			w.Flush()
+			_ = w.Flush()
 		}
 
 		return nil
