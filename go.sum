@@ -16,6 +16,8 @@ github.com/sg-daigo/kanboard v1.0.3 h1:BNxZ6pFuzUxI88iuiEvyJPPgbnLprx45TF/ZgZMPn
 github.com/sg-daigo/kanboard v1.0.3/go.mod h1:qf3RiS7/R+qPQSnq6lalV2KCFKCei/p5TzcUg3jA6NY=
 github.com/sg-daigo/kanboard-go v1.0.0 h1:zlJQE2pB3x5TV77gY158RPM6EXkV5MB8nv7HKYmCC8A=
 github.com/sg-daigo/kanboard-go v1.0.0/go.mod h1:Hk40nRIP5eVwUrtfo2hyGs3mLTqfhmqu/9duv5nqcBY=
+github.com/sg-daigo/kanboard-go v1.0.3 h1:ywTigwWgAupiG5wmcF7oWSwSG4bgK17mO5zRwfwlgpA=
+github.com/sg-daigo/kanboard-go v1.0.3/go.mod h1:Hk40nRIP5eVwUrtfo2hyGs3mLTqfhmqu/9duv5nqcBY=
 github.com/spf13/cobra v1.10.2 h1:DMTTonx5m65Ic0GOoRY2c16WCbHxOOw6xxezuLaBpcU=
 github.com/spf13/cobra v1.10.2/go.mod h1:7C1pvHqHw5A4vrJfjNwvOdzYu0Gml16OCs2GRiTUUS4=
 github.com/spf13/pflag v1.0.9 h1:9exaQaMOCwffKiiiYk6/BndUBv+iRViNW+4lEMi0PvY=

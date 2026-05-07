@@ -8,8 +8,9 @@
 |---|---|
 | `projects` | 全プロジェクトの一覧を取得する |
 | `tags` | 全タグの一覧を取得する |
-| `tasktags` | 指定したタスクに紐づくタグを取得する |
+| `tasktags` | 指定したタスクに紐付くタグを取得する |
 | `users` | 全ユーザーの一覧を取得する |
+| `projectcolumns` | 指定したプロジェクトに紐付くカラムを取得する |
 
 ## 必要要件
 
@@ -85,6 +86,17 @@ kb-tools tasktags -t 42
 ```bash
 kb-tools users
 ```
+
+#### `projectcolumns` - プロジェクトのカラムを取得
+
+| オプション | 短縮形 | 説明 |
+| --- | --- | --- |
+| `--project` | `-p` | カラムを取得するプロジェクトの ID |
+
+```bash
+kb-tools projectcolumns -p 1
+```
+
 
 各コマンドの結果は標準出力に出力されます。
 
