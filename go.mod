@@ -1,4 +1,4 @@
-module kb-tool
+module github.com/sg-daigo/kb-tool
 
 go 1.26.2
 
