@@ -21,7 +21,7 @@ THE SOFTWARE.
 */
 package main
 
-import "kb-tool/cmd"
+import "github.com/sg-daigo/kb-tool/cmd"
 
 func main() {
 	cmd.Execute()
